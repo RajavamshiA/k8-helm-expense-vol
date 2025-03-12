@@ -27,7 +27,7 @@ spec:
     spec: 
       containers:
       - name: backend
-        image: joindevops/backend: {{ .Values.deployment.version }}   
+        image: joindevops/backend:{{ .Values.deployment.version }}   
         envFrom:
         - configMapRef:
             name: backend     
