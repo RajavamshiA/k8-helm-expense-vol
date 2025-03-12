@@ -34,7 +34,7 @@ spec:
               path: nginx.conf
       containers:
       - name: nginx
-        image: joindevops/frontend: {{ .Values.deployment.version }} 
+        image: joindevops/frontend:{{ .Values.deployment.version }} 
         resources:
           requests:
             memory: "69Mi"
