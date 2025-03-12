@@ -1,0 +1,15 @@
+#Cluster IP
+kind: Service
+apiVersion: v1
+metadata: 
+  name: backend
+  namespace: expense
+spec: 
+  selector: #Labels are used as seletors
+     app: backend
+     tier: backend
+     purpose: expense
+  ports:
+  - protocol: TCP
+    port: 8080 #service port
+    targetPort: 8080

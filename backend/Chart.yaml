@@ -1,0 +1,5 @@
+apiVersion: v2
+name: backend # Chart Name 
+version: 1.0.0 # Cart version
+description: This is Backend deployment 
+appVersion: 1.0.0 # Backend app version
