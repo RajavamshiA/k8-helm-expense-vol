@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata: 
+  name: frontend
+  namespace: expense
+spec: 
+  type: LoadBalancer
+  selector: #Labels are used as seletors
+     app: frontend
+     tier: web
+     purpose: expense
+  ports:
+  - protocol: TCP
+    port: 80 #service port
+    targetPort: 8080
